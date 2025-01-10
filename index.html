@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Updated Navbar</title>
-    <link rel="stylesheet" href="style.css">
+    <title>College Website</title>
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<body>
 
-<body class="bg-gray-100">
-
-    <!-- Thin Navbar -->
+  <!-- Thin Navbar -->
     <div class="w-full bg-[#4d0000] text-white text-sm px-5 py-7 flex items-center nav1">
         <div class="flex items-center space-x-2">
             <span>Call Us Today! 0484 2911800</span>
@@ -29,47 +28,145 @@
             <a href="#" class="text-white">LOGIN</a>
         </div>
     </div>
-    
 
-    <!-- Header Image -->
+    <!-- Logo -->
     <div class="w-full logo-nav">
-        <img src="assets/logohead.jpg" alt="Header Image" class="w-full h-[10vh] object-cover dist-logo">
+        <img src="images/logohead.jpg" alt="Header Image" class="w-full max-w-[800px] h-auto object-cover mt-6">
     </div>
 
     <!-- Navbar -->
-    <nav class="bg-blue-600 text-white">
-        <div class="container mx-auto flex justify-center">
-            <!-- Navbar Items -->
-            <ul class="flex space-x-6 items-center py-4">
-                <li><a href="#" class="hover:text-gray-200">About</a></li>
-                <li><a href="#" class="hover:text-gray-200">Admission</a></li>
-                <li class="relative group">
-                    <a href="#" class="hover:text-gray-200">Academics</a>
-                    <!-- Dropdown -->
-                    <div class="absolute hidden group-hover:block bg-white text-black shadow-lg mt-2 rounded-md">
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Courses</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Departments</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Programs</a>
-                    </div>
-                </li>
-                <li><a href="#" class="hover:text-gray-200">Community</a></li>
-                <li><a href="#" class="hover:text-gray-200">Student Service</a></li>
-                <li><a href="#" class="hover:text-gray-200">Placement</a></li>
-                <li class="relative group">
-                    <a href="#" class="hover:text-gray-200">Campus Life</a>
-                    <!-- Dropdown -->
-                    <div class="absolute hidden group-hover:block bg-white text-black shadow-lg mt-2 rounded-md">
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Clubs</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Facilities</a>
-                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Hostels</a>
-                    </div>
-                </li>
-                <li><a href="#" class="hover:text-gray-200">IQAC</a></li>
-                <li><a href="#" class="hover:text-gray-200">News & Events</a></li>
-                <li><a href="#" class="hover:text-gray-200">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-</body>
+    <nav class="bg-white border-gray-200 shadow">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <!-- Hamburger for Small Screens -->
+            <button id="menu-toggle" class="text-gray-800 lg:hidden">
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
 
+            <!-- Nav Items (center-aligned for larger screens) -->
+            <div id="menu" class="hidden lg:flex space-x-6 mx-auto">
+                <a href="#" class="relative text-gray-800 font-semibold flex items-center group">
+                    <i class="fas fa-home mr-2"></i> <!-- Font Awesome Home Icon -->
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4d0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+                <a href="#about" class="relative text-gray-800 font-medium whitespace-nowrap group">About
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4d0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+
+                <a href="#admissions" class="relative text-gray-800 font-medium whitespace-nowrap group">Admissions
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4d0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+
+                <a href="#academics" class="relative text-gray-800 font-medium whitespace-nowrap group">Academics
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4d0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+
+                <a href="#community" class="relative text-gray-800 font-medium whitespace-nowrap group">Community
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4d0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+
+                <a href="#student-services" class="relative text-gray-800 font-medium whitespace-nowrap group">Student Services
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4d0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+
+                <a href="#placement" class="relative text-gray-800 font-medium whitespace-nowrap group">Placement
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4d0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+
+                <a href="#campus-life" class="relative text-gray-800 font-medium whitespace-nowrap group">Campus Life
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4d0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+
+                <a href="#iqac" class="relative text-gray-800 font-medium whitespace-nowrap group">IQAC
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4d0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+
+                <a href="#information-center" class="relative text-gray-800 font-medium whitespace-nowrap group">Information Center
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4d0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+
+                <a href="#contact" class="relative text-gray-800 font-medium whitespace-nowrap group">Contact
+                    <span class="absolute left-0 bottom-0 w-full h-[2px] bg-[#4d0000] scale-x-0 group-hover:scale-x-100 transform transition-transform duration-300"></span>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Dropdown for Small Screens -->
+        <div id="dropdown-menu" class="hidden flex-col bg-gray-100 px-5 shadow-md">
+            <a href="#" class="relative block text-gray-800 w-full text-center py-2 font-semibold group">
+                <i class="fas fa-home mr-2"></i> <!-- Font Awesome Home Icon -->
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4d0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#about" class="relative block text-gray-800 w-full text-center py-2 group">About
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4d0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#admissions" class="relative block text-gray-800 w-full text-center py-2 group">Admissions
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4d0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#academics" class="relative block text-gray-800 w-full text-center py-2 group">Academics
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4d0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#community" class="relative block text-gray-800 w-full text-center py-2 group">Community
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4d0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#student-services" class="relative block text-gray-800 w-full text-center py-2 group">Student Services
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4d0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#placement" class="relative block text-gray-800 w-full text-center py-2 group">Placement
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4d0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#campus-life" class="relative block text-gray-800 w-full text-center py-2 group">Campus Life
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4d0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#iqac" class="relative block text-gray-800 w-full text-center py-2 group">IQAC
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4d0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#information-center" class="relative block text-gray-800 w-full text-center py-2 group">Information Center
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4d0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="#contact" class="relative block text-gray-800 w-full text-center py-2 group">Contact
+                <span class="absolute left-1/2 bottom-0 w-1/4 h-[2px] bg-[#4d0000] transform -translate-x-1/2 scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+        </div>
+
+    </nav>
+
+
+
+
+    <!-- Content Sections -->
+    <section id="about" class="py-10">
+        <div class="container mx-auto text-center">
+        <h1 class="text-3xl font-bold">About Us</h1>
+        <p>Welcome to [College Name]! We offer quality education and facilities.</p>
+        </div>
+    </section>
+
+    <section id="admissions" class="py-10 bg-gray-100">
+        <div class="container mx-auto text-center">
+        <h1 class="text-3xl font-bold">Admissions</h1>
+        <p>Join our community of learners and achievers.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-10">
+        <div class="container mx-auto text-center">
+        <h1 class="text-3xl font-bold">Contact Us</h1>
+        <p>Get in touch with us for more information.</p>
+        </div>
+    </section>
+
+
+    <!-- Script to Handle Menu Toggle -->
+    <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    menuToggle.addEventListener('click', () => {
+        dropdownMenu.classList.toggle('hidden');
+    });
+    </script>
+</body>
 </html>
