@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College Website</title>
+    <title>DiST Angamaly, Top MBA colleges in Kerala</title>
     
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -11,11 +11,12 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="images/logo.png">
 </head>
 <body>
 
   <!-- Thin Navbar -->
-    <div class="w-full bg-[#4d0000] text-white text-sm px-5 py-7 flex items-center nav1">
+    <div class="w-full bg-[#4d0000] text-white text-sm px-5 py-5 flex items-center nav1">
         <div class="flex items-center space-x-2">
             <span>Call Us Today! 0484 2911800</span>
             <span>|</span>
@@ -136,27 +137,165 @@
 
 
 
-    <!-- Content Sections -->
-    <section id="about" class="py-10">
-        <div class="container mx-auto text-center">
-        <h1 class="text-3xl font-bold">About Us</h1>
-        <p>Welcome to [College Name]! We offer quality education and facilities.</p>
+    <!-- Poster Section -->
+    <section id="poster" class=" bg-gray-200 relative h-auto bg-cover bg-center">
+        <!-- Poster Image -->
+        <img id="posterImage" src="images/poster.jpg" alt="College Event Poster" class="w-full h-auto object-contain">
+    </section>
+
+
+    
+    <section id="cards-section" class="bg-gray-100 py-10">
+        <div class="max-w-screen-xl mx-auto px-5 sm:px-10">
+            <div class="relative bg-[#4d0000] text-white font-semibold text-2xl py-2 mb-8 dept-head w-fit px-10 pl-4">
+                Departments
+            </div>
+
+            <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                <!-- Card 1 -->
+                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md">
+                    <a href="#">
+                        <img class="w-full" src="images/cs.jpg" alt="Sunset in the mountains">
+                    </a>
+                    <div class="relative -mt-16 px-5 pt-5 pb-8 bg-white rounded-md mx-5 shadow-lg mb-5 hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)] transition-shadow duration-300">
+                        <a href="#" class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Computer Science</a>
+                        <p class="text-gray-500 text-sm">
+                            School of Computer Science had its beginning in 2002 with the objective of helping students to harvest the benefits of the IT revolution that swept through every facet of modern human life for the past two decades. <br>
+                            <a href="#" class="text-[#4d0000] text-[12px] hover:underline">View more</a>
+                        </p>
+                    </div>
+
+                    <a href="#_" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-[#4d0000] transition duration-300 ease-out border-2 border-[#4d0000] rounded-full shadow-md group">
+                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#4d0000] group-hover:translate-x-0 ease">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </span>
+                        <span class="absolute flex items-center justify-center w-full h-full text-[#4d0000] transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
+                        <span class="relative invisible">Explore</span>
+                    </a>
+
+                </div>
+
+                <!-- Card 2 -->
+                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md">
+                    <a href="#">
+                        <img class="w-full" src="images/sw.jpg" alt="Sunset in the mountains">
+                    </a>
+                    <div class="relative -mt-16 px-5 pt-5 pb-8 bg-white rounded-md mx-5 shadow-lg mb-5 hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)] transition-shadow duration-300">
+                        <a href="#" class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Social Work</a>
+                        <p class="text-gray-500 text-sm">
+                            De Paul School of Social Work was established in the year 2004 with a concrete vision of imparting high quality education in professional Social Work to meet the growing needs of welfare professionals around the globe. <br>
+                            <a href="#" class="text-[#4d0000] text-[12px] hover:underline">View more</a>
+                        </p>
+                    </div>
+
+                    <a href="#_" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-[#4d0000] transition duration-300 ease-out border-2 border-[#4d0000] rounded-full shadow-md group">
+                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#4d0000] group-hover:translate-x-0 ease">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </span>
+                        <span class="absolute flex items-center justify-center w-full h-full text-[#4d0000] transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
+                        <span class="relative invisible">Explore</span>
+                    </a>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md">
+                    <a href="#">
+                        <img class="w-full" src="images/management.jpg" alt="Sunset in the mountains">
+                    </a>
+                    <div class="relative -mt-16 px-5 pt-5 pb-8 bg-white rounded-md mx-5 shadow-lg mb-5 hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)] transition-shadow duration-300">
+                        <a href="#" class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Management</a>
+                        <p class="text-gray-500 text-sm">
+                            An effective leader for business and society is one who is able to perceive, comprehend, and interconnect with people from all segments of society. We being one of the premier B-schools in Kerala,<br>
+                            <a href="#" class="text-[#4d0000] text-[12px] hover:underline">View more</a>
+                        </p>
+                    </div>
+
+                    <a href="#_" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-[#4d0000] transition duration-300 ease-out border-2 border-[#4d0000] rounded-full shadow-md group">
+                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#4d0000] group-hover:translate-x-0 ease">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </span>
+                        <span class="absolute flex items-center justify-center w-full h-full text-[#4d0000] transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
+                        <span class="relative invisible">Explore</span>
+                    </a>
+
+                </div>
+
+                <!-- Add 3 more cards similarly -->
+                <!-- Card 4 -->
+                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md">
+                    <a href="#">
+                        <img class="w-full" src="images/commerce.jpg" alt="Sunset in the mountains">
+                    </a>
+                    <div class="relative -mt-16 px-5 pt-5 pb-8 bg-white rounded-md mx-5 shadow-lg mb-5 hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)] transition-shadow duration-300">
+                        <a href="#" class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Commerce</a>
+                        <p class="text-gray-500 text-sm">
+                            "Education is the most powerful weapon which you can use to change the world" - Nelson Mandela. Department of Commerce began its functioning in 2010 with a single batch of 36 students in B.Com Computer Application.<br>
+                            <a href="#" class="text-[#4d0000] text-[12px] hover:underline">View more</a>
+                        </p>
+                    </div>
+
+                    <a href="#_" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-[#4d0000] transition duration-300 ease-out border-2 border-[#4d0000] rounded-full shadow-md group">
+                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#4d0000] group-hover:translate-x-0 ease">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </span>
+                        <span class="absolute flex items-center justify-center w-full h-full text-[#4d0000] transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
+                        <span class="relative invisible">Explore</span>
+                    </a>
+
+                </div>
+
+                <!-- Card 5 -->
+                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md">
+                    <a href="#">
+                        <img class="w-full" src="images/media.jpg" alt="Sunset in the mountains">
+                    </a>
+                    <div class="relative -mt-16 px-5 pt-5 pb-8 bg-white rounded-md mx-5 shadow-lg mb-5 hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)] transition-shadow duration-300">
+                        <a href="#" class="font-semibold text-lg transition duration-500 inline-block mb-2">School of Media and Communication</a>
+                        <p class="text-gray-500 text-sm">
+                            The School of Media & Communication had its inception in the year 2012 with the purpose of shaping graduates with a broad range of communication andmultimedia production skills <br>
+                            <a href="#" class="text-[#4d0000] text-[12px] hover:underline">View more</a>
+                        </p>
+                    </div>
+
+                    <a href="#_" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-[#4d0000] transition duration-300 ease-out border-2 border-[#4d0000] rounded-full shadow-md group">
+                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#4d0000] group-hover:translate-x-0 ease">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </span>
+                        <span class="absolute flex items-center justify-center w-full h-full text-[#4d0000] transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
+                        <span class="relative invisible">Explore</span>
+                    </a>
+
+                </div>
+
+                <!-- Card 6 -->
+                <div class="rounded overflow-hidden flex flex-col bg-white shadow-md">
+                    <a href="#">
+                        <img class="w-full" src="images/english.jpg" alt="Sunset in the mountains">
+                    </a>
+                    <div class="relative -mt-16 px-5 pt-5 pb-8 bg-white rounded-md mx-5 shadow-lg mb-5 hover:shadow-[0_8px_20px_rgba(0,0,0,0.3)] transition-shadow duration-300">
+                        <a href="#" class="font-semibold text-lg transition duration-500 inline-block mb-2">School of English</a>
+                        <p class="text-gray-500 text-sm">
+                            School of English has been designed to sharpen the skills and polish the innate abilities of the students by a feasible inception into the academics and priming them with advanced systems, so as to transmute into the most <br>
+                            <a href="#" class="text-[#4d0000] text-[12px] hover:underline">View more</a>
+                        </p>
+                    </div>
+
+                    <a href="#_" class="relative inline-flex items-center justify-center w-1/2 m-auto mb-5 p-4 px-6 py-1 overflow-hidden font-medium text-[#4d0000] transition duration-300 ease-out border-2 border-[#4d0000] rounded-full shadow-md group">
+                        <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#4d0000] group-hover:translate-x-0 ease">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </span>
+                        <span class="absolute flex items-center justify-center w-full h-full text-[#4d0000] transition-all duration-300 transform group-hover:translate-x-full ease">Explore</span>
+                        <span class="relative invisible">Explore</span>
+                    </a>
+
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="admissions" class="py-10 bg-gray-100">
-        <div class="container mx-auto text-center">
-        <h1 class="text-3xl font-bold">Admissions</h1>
-        <p>Join our community of learners and achievers.</p>
-        </div>
-    </section>
 
-    <section id="contact" class="py-10">
-        <div class="container mx-auto text-center">
-        <h1 class="text-3xl font-bold">Contact Us</h1>
-        <p>Get in touch with us for more information.</p>
-        </div>
-    </section>
+
 
 
     <!-- Script to Handle Menu Toggle -->
